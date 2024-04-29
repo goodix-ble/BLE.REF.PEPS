@@ -1,0 +1,100 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- main activity theme. -->
+    <style name="AppThemeGreen" parent="ActivityThemeGreen">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="colorControlNormal">@color/colorPrimaryGreen</item>
+    </style>
+
+    <!--other activity theme. -->
+    <style name="ActivityThemeGreen" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryGreen</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkGreen</item>
+        <item name="colorAccent">@color/colorAccentGreen</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="android:titleTextColor" tools:targetApi="m">@android:color/white</item>
+        <item name="colorControlHighlight">@color/colorAccentGreen</item>
+        <item name="colorControlNormal">@color/colorPrimaryGreen</item>
+    </style>
+    <!--*********************************************************************************-->
+
+
+    <!-- main activity theme. -->
+    <style name="AppThemeBlue" parent="ActivityThemeBlue">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="colorControlNormal">@color/colorPrimaryBlue</item>
+    </style>
+
+    <!--other activity theme. -->
+    <style name="ActivityThemeBlue" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryBlue</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkBlue</item>
+        <item name="colorAccent">@color/colorAccentBlue</item>
+        <item name="colorControlHighlight">@color/colorAccentBlue</item>
+        <item name="colorControlNormal">@color/colorPrimaryBlue</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowStyle</item>
+    </style>
+    <!--*********************************************************************************-->
+
+
+    <!-- main activity theme. -->
+    <style name="AppThemePink" parent="ActivityThemePink">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="colorControlNormal">@color/colorPrimaryPink</item>
+    </style>
+
+    <!--other activity theme. -->
+    <style name="ActivityThemePink" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryPink</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkPink</item>
+        <item name="colorAccent">@color/colorAccentPink</item>
+        <item name="colorControlHighlight">@color/colorAccentPink</item>
+        <item name="colorControlNormal">@color/colorPrimaryPink</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowStyle</item>
+    </style>
+
+    <!--*********************************************************************************-->
+
+
+    <!-- main activity theme. -->
+    <style name="AppThemeRed" parent="ActivityThemeRed">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="colorControlNormal">@color/colorPrimaryRed</item>
+    </style>
+
+    <!--other activity theme. -->
+    <style name="ActivityThemeRed" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimaryRed</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDarkRed</item>
+        <item name="colorAccent">@color/colorAccentRed</item>
+        <item name="colorControlHighlight">@color/colorAccentRed</item>
+        <item name="colorControlNormal">@color/colorPrimaryRed</item>
+        <item name="android:actionOverflowButtonStyle">@style/OverFlowStyle</item>
+    </style>
+
+    <!--*********************************************************************************-->
+
+<style name="OverFlowStyle">
+    <item name="android:src">@mipmap/three_point</item>
+    <item name="android:background">?android:attr/selectableItemBackgroundBorderless</item>
+    <item name="android:paddingRight">5dp</item>
+</style>
+
+
+</resources>

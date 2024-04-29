@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- common -->
+    <string name="common_connect">连接</string>
+    <string name="common_disconnect">断开连接</string>
+    <string name="common_disconnecting">断开连接中</string>
+    <string name="common_connecting">连接中</string>
+    <string name="common_connected">连接成功</string>
+    <string name="common_ready">设备已就绪</string>
+    <string name="common_disconnected">连接已断开</string>
+    <string name="common_sure">确定 </string>
+    <string name="common_cancel">取消 </string>
+    <string name="common_bonding">绑定中</string>
+    <string name="common_bonded">绑定完成</string>
+    <string name="common_not_support">无效设备</string>
+    <string name="common_battery">电量：</string>
+    <string name="common_about">关于</string>
+    <string name="common_not_available">N/A</string>
+    <string name="common_device_connect">设备连接 </string>
+    <string name="common_re_connect">重连</string>
+    <string name="common_finding_service">正在发现服务 </string>
+    <string name="common_no_device">（未连接设备）</string>
+
+
+    <!-- main_activity -->
+
+
+    <!-- profile fragment -->
+    <string name="profile_no_services_found">没有发现对应服务，请重新选择设备连接</string>
+
+    <!-- profile_scan_dialog_fragment -->
+    <string name="scanner_subtitle_bonded">已配对的设备</string>
+    <string name="scanner_subtitle_connected">已连接的设备</string>
+    <string name="scanner_subtitle_not_bonded">可用设备</string>
+    <string name="scanner_select_device">选择设备</string>
+    <string name="scanner_scan_device">正在扫描设备</string>
+    <string name="scanner_no_device_found">""</string>
+    <string name="common_set">"设置"</string>
+    <string name="common_exit_tip">再次点击返回键退出</string>
+    <string name="common_menu">菜单</string>
+
+
+    <!-- app fragment-->
+
+
+    <!-- about string -->
+
+
+</resources>

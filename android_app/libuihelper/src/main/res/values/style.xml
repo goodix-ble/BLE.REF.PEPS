@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DialogNoAnim" parent="android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+
+    <style name="DialogPopup" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/from_bottom_to_top</item>
+        <item name="android:windowExitAnimation">@anim/from_top_to_bottom</item>
+    </style>
+
+    <style name="FullScreenPopupDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/DialogPopup</item>
+    </style>
+</resources>

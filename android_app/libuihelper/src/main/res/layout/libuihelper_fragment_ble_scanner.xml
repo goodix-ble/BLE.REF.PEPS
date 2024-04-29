@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/libuihelper_fragment_ble_scanner_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#EFF3F7"
+        android:gravity="center"
+        android:padding="6dp"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:text="Scanning" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/libuihelper_fragment_ble_scanner_rv"
+        android:layout_width="match_parent"
+        android:background="#EFF3F7"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:padding="3dp"
+        tools:listitem="@layout/libuihelper_item_scan_result" />
+
+    <LinearLayout
+        android:id="@+id/libuihelper_fragment_ble_scanner_setting_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#EFF3F7"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/libuihelper_fragment_ble_scanner_name_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/libuihelper_fragment_ble_scanner_name_ed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/libuihelper_device_name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:minWidth="120dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/libuihelper_fragment_ble_scanner_mac_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/libuihelper_fragment_ble_scanner_mac_ed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/libuihelper_mac"
+                android:importantForAutofill="no"
+                android:inputType="textVisiblePassword|textCapCharacters"
+                android:minWidth="120dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/libuihelper_fragment_ble_scanner_uuid_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/libuihelper_fragment_ble_scanner_uuid_ed"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/libuihelper_service_uuid"
+                android:importantForAutofill="no"
+                android:inputType="textVisiblePassword|textCapCharacters"
+                android:minWidth="120dp"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/libuihelper_fragment_ble_scanner_rssi_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/libuihelper_rssi" />
+
+            <SeekBar
+                android:id="@+id/libuihelper_fragment_ble_scanner_rssi_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/libuihelper_fragment_ble_scanner_rssi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="-66dBm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/libuihelper_fragment_ble_scanner_show_bonded_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/libuihelper_show_bonded"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/libuihelper_fragment_ble_scanner_show_connected_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/libuihelper_show_connected"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/libuihelper_fragment_ble_scanner_continuously_scan_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/libuihelper_continuously_scan"
+                android:textSize="14sp" />
+
+            <CheckBox
+                android:id="@+id/libuihelper_fragment_ble_scanner_sort_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/libuihelper_sort"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/libuihelper_fragment_ble_scanner_setting_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_settings_black_24dp"
+            app:tint="?attr/colorAccent"
+            tools:ignore="ContentDescription" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/libuihelper_fragment_ble_scanner_start_btn"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="6dp"
+            android:background="@drawable/button_ripple_bg"
+            android:text="@string/libuihelper_start" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/libuihelper_fragment_ble_scanner_close_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="12dp"
+            app:srcCompat="@drawable/ic_close_black_24dp"
+            app:tint="?attr/colorAccent" />
+    </LinearLayout>
+
+</LinearLayout>

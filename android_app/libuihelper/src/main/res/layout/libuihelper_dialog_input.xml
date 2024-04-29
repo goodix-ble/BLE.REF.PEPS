@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp">
+
+    <TextView
+        android:id="@+id/libuihelper_dialog_input_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/libuihelper_dialog_input_caption_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        tools:text="Some description" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/libuihelper_dialog_input_prefix_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:text="0x"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+
+        <EditText
+            android:id="@+id/libuihelper_dialog_input_value_ed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:textSize="14sp"
+            tools:ignore="Autofill,LabelFor" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/libuihelper_dialog_input_tip_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        tools:text="Error info or input tips" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/libuihelper_dialog_input_cancel_btn"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@android:string/cancel"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/libuihelper_dialog_input_ok_btn"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="6dp"
+            android:text="@android:string/ok"
+            android:textSize="14sp" />
+    </LinearLayout>
+</LinearLayout>

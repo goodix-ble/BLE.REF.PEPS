@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="defineActivityStyles">
+        <item>@style/ActivityThemeBlue</item>
+        <item>@style/ActivityThemePink</item>
+        <item>@style/ActivityThemeGreen</item>
+        <item>@style/ActivityThemeRed</item>
+    </array>
+
+    <array name="defineAPPStyles">
+        <item>@style/AppThemeBlue</item>
+        <item>@style/AppThemePink</item>
+        <item>@style/AppThemeGreen</item>
+        <item>@style/AppThemeRed</item>
+    </array>
+
+
+    <array name="colorAccentArray">
+        <item>@color/colorAccentBlue</item>
+        <item>@color/colorAccentPink</item>
+        <item>@color/colorAccentGreen</item>
+        <item>@color/colorAccentRed</item>
+    </array>
+
+    <string-array name="theme_select">
+        <item>@string/theme_blue</item>
+        <item>@string/theme_pink</item>
+        <item>@string/theme_green</item>
+        <item>@string/theme_red</item>
+    </string-array>
+
+
+</resources>

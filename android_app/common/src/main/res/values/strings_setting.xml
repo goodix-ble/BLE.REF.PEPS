@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- setting fragment -->
+
+    <string name="language_cn">中文（简体）</string>
+    <string name="language_en">English(United States)</string>
+    <string name="language_auto">Auto</string>
+    <string name="language_traditional">中文（繁體）</string>
+
+    <string name="theme_blue">Blue</string>
+    <string name="theme_pink">Orange</string>
+    <string name="theme_green">Green</string>
+    <string name="theme_red">Red</string>
+
+
+</resources>

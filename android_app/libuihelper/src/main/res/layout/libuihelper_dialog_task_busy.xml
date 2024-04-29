@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingTop="12dp"
+    android:paddingRight="12dp">
+
+    <TextView
+        android:id="@+id/libuihelper_title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:paddingBottom="12dp"
+        android:text="@string/libuihelper_action"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/libuihelper_progress_bar"
+        android:layout_width="24dp"
+        android:layout_height="24dp" />
+
+    <TextView
+        android:id="@+id/libuihelper_tip_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/libuihelper_please_wait" />
+
+    <Button
+        android:id="@+id/libuihelper_cancel_btn"
+        style="?attr/buttonBarButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/libuihelper_cancel" />
+</LinearLayout>

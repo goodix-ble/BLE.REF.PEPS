@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout style="?android:attr/buttonBarStyle"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:id="@+id/scanner_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择设备"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/textColorDark"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_below="@+id/scanner_txt_title"
+        android:layout_above="@+id/wave_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:scrollbarStyle="outsideOverlay" />
+
+    <RelativeLayout
+        android:id="@+id/wave_line"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="130dp"
+        android:background="@drawable/border_shadow">
+
+        <com.example.myapplication1.ui.WaveView
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:wave_color="?attr/colorAccent"
+            app:wave_coreImageRadius="40"
+            app:wave_width="40"/>
+
+        <Button
+            android:id="@+id/scan_button"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:text="扫描"
+            android:textSize="13sp"
+            android:background="@drawable/circle_shape"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

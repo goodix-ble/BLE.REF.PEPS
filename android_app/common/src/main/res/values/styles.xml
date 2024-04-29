@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- 防止欢迎页白屏或者黑屏，设置图片 -->
+
+    <!-- ToolBar菜单样式.-->
+    <!--*********************************************************-->
+
+    <style name="CardViewTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginLeft">6dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="contentPadding">8dp</item>
+        <item name="cardCornerRadius">5dp</item>
+        <item name="cardElevation">1dp</item>
+    </style>
+
+    <!--*************************************************************-->
+    <style name="style_scan_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:scrollHorizontally">true</item>
+        <!-- Dialog进入及退出动画 -->
+        <item name="android:windowAnimationStyle">@style/BottomToTopAnim</item>
+    </style>
+
+    <style name="BottomToTopAnim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/scan_alert_in</item>
+        <item name="android:windowExitAnimation">@anim/scan_alert_out</item>
+    </style>
+
+
+    <!--*************************************************************-->
+    <style name="ConnectButtonTheme">
+        <item name="android:id">@id/profile_connect_button</item>
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@drawable/button_profile</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:text">@string/common_connect</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/textColorDark</item>
+        <item name="android:textSize">15dp</item>
+    </style>
+
+    <style name="DeviceNameTheme">
+        <item name="android:id">@id/profile_device_name</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/device_name_font_size</item>
+        <item name="android:textColor">@color/textColorDark</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,81 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="3dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="6dp">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/libuihelper_item_scan_result_icon_iv"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_bluetooth_black_24dp"
+                android:tint="?attr/colorAccent" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="6dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/libuihelper_item_scan_result_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="middle"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp"
+                    tools:text="It is a very long name." />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/libuihelper_item_scan_result_mac_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp"
+                        tools:text="11:22:33:44:55:66" />
+
+                    <TextView
+                        android:id="@+id/libuihelper_item_scan_result_status_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="6dp"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12sp"
+                        tools:text="BONDED" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/libuihelper_item_scan_result_rssi_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"
+                tools:text="CONNECTED" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

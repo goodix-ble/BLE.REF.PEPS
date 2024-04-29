@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="?android:attr/buttonBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorWindowBack"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/title_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="@string/scanner_select_device"
+        android:textColor="@color/textColorDark"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/item_list_scanner_device" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/border_shadow">
+
+
+        <com.goodix.ble.gr.toolbox.common.ui.WaveView
+            android:id="@+id/wave"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:wave_color="?attr/colorAccent"
+            app:wave_coreImageRadius="10"
+            app:wave_width="30" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/action_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/libuihelper_scan"
+            android:src="@mipmap/ic_scan_device"
+            app:backgroundTint="?attr/colorAccent"
+            app:elevation="5dp"
+            app:fabSize="normal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:pressedTranslationZ="5dp"
+            app:rippleColor="@color/colorWindowBack" />
+
+        <ImageView
+            android:id="@+id/sort_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/img_select"
+            android:contentDescription="@string/libuihelper_sort"
+            android:src="@mipmap/ic_sort"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/colorAccent" />
+
+        <ImageView
+            android:id="@+id/cancel_iv"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/img_select"
+            android:contentDescription="@string/libuihelper_cancel"
+            android:src="@mipmap/ic_cancel"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/colorAccent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

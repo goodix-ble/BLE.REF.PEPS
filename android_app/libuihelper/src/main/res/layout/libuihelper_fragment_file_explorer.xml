@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="#EFF3F7"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/libuihelper_fragment_file_explorer_path_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:text="@string/libuihelper_na"
+            android:textColor="@android:color/black"
+            android:textSize="16sp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/libuihelper_fragment_file_explorer_sort_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_sort_by_alpha_black_24dp"
+            android:tint="?attr/colorAccent"
+            tools:ignore="ContentDescription" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/libuihelper_fragment_file_explorer_backward_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_backspace_black_24dp"
+            app:tint="?attr/colorAccent" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/libuihelper_fragment_file_explorer_file_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="3dp"
+        android:layout_weight="1"
+        android:background="#EFF3F7"
+        android:padding="3dp"
+        tools:listitem="@layout/libuihelper_item_file_info" />
+</LinearLayout>

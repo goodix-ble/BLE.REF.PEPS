@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/libuihelper_fragment_simple_log_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:visibility="visible"
+    tools:background="#999999"
+    tools:visibility="visible">
+
+    <EditText
+        android:id="@+id/libuihelper_fragment_simple_log_search_ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginEnd="6dp"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:drawableEnd="@drawable/ic_close_black_24dp"
+        android:hint="Log Filter"
+        android:imeOptions="actionSearch"
+        android:importantForAutofill="no"
+        android:inputType="textNoSuggestions"
+        android:lines="1"
+        android:padding="6dp"
+        android:singleLine="true" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/libuihelper_fragment_simple_log_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:layout_weight="1"
+        android:padding="6dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Spinner
+            android:id="@+id/libuihelper_fragment_simple_log_level_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/libuihelper_log_levels" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <Button
+            android:id="@+id/libuihelper_fragment_simple_log_save_btn"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save" />
+
+        <Button
+            android:id="@+id/libuihelper_fragment_simple_log_clear_btn"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear" />
+
+        <Button
+            android:id="@+id/libuihelper_fragment_simple_log_bottom_btn"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bottom" />
+    </LinearLayout>
+</LinearLayout>

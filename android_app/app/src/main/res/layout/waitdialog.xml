@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal">
+
+    <ProgressBar
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:text="请按设备OK健确认绑定" />
+
+    <TextView
+        android:id="@+id/countText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_vertical"
+        android:textSize="20sp"
+        android:textColor="@color/colorPrimaryBlue"
+        android:text="10" />
+
+</LinearLayout>

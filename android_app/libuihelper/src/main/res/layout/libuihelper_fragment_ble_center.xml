@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/libuihelper_fragment_ble_center_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        tools:listitem="@layout/libuihelper_item_ble_device">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginTop="6dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/libuihelper_fragment_ble_center_add_connected_device_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/button_ripple_bg"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="添加已连接设备" />
+
+        <Space
+            android:layout_width="24dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/libuihelper_fragment_ble_center_scan_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:background="@drawable/button_ripple_bg"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:text="扫描" />
+    </LinearLayout>
+</LinearLayout>

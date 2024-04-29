@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <androidx.cardview.widget.CardView
+        style="@style/CardViewTheme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/common_item_ble_device_select_rb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="6dp"
+                android:paddingEnd="6dp">
+
+                <TextView
+                    android:id="@+id/common_item_ble_device_name_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    tools:text="DUT Name" />
+
+                <TextView
+                    android:id="@+id/common_item_ble_device_address_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    tools:text="DUT Address" />
+
+                <TextView
+                    android:id="@+id/common_item_ble_device_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    tools:text="DUT Address" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/common_item_ble_device_connect_btn"
+                    style="?attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/common_connect" />
+
+                <androidx.appcompat.widget.AppCompatImageButton
+                    android:id="@+id/common_item_ble_device_menu_btn"
+                    android:layout_width="24dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:src="@drawable/ic_context_menu_bg"
+                    android:tint="?attr/colorAccent" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">PEPS</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <string name="no_device_found">Pull and scan device</string>
+    <string name="main_permission_location_alert">GRToolbox requires access to your location, please enalbe the location permission in the permission settings.</string>
+    <string name="main_permission_title">Enable permission</string>
+    <string name="common_sure">OK</string>
+    <string name="not_available">N/A</string>
+
+    <string name="connect_device">Connecting device…</string>
+    <string name="common_disconnect">Disconnect</string>
+    <string name="common_connect">Connect</string>
+    <string name="device_disconnect">Device disconnected</string>
+
+    <string name="common_cancel">CANCEL</string>
+    <string name="reconnect_device">Reconnect</string>
+    <string name="please_wait">Please wait</string>
+    <string name="filter">filter</string>
+
+    <string name="dfu_connect_success">Connect Success</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

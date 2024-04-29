@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试配置"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/libuihelper_fragment_stress_test_config_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:background="@android:color/darker_gray"
+                    tools:minHeight="60dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="测试总次数：" />
+
+                        <EditText
+                            android:id="@+id/libuihelper_fragment_stress_test_count_ed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="4"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="12dp"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="允许失败次数：" />
+
+                        <EditText
+                            android:id="@+id/libuihelper_fragment_stress_test_max_fail_ed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="4"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="限总时间(秒)：" />
+
+                        <EditText
+                            android:id="@+id/libuihelper_fragment_stress_test_max_time_ed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="unlimited"
+                            android:minEms="4"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最大连续失败：" />
+
+                        <EditText
+                            android:id="@+id/libuihelper_fragment_stress_test_max_hard_fail_ed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="4"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="end">
+
+                    <CheckBox
+                        android:id="@+id/libuihelper_fragment_stress_test_status_log_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="显示步骤"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="0dp" />
+
+                    <CheckBox
+                        android:id="@+id/libuihelper_fragment_stress_test_save_log_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="记录失败"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="6dp"
+                        android:layout_height="0dp" />
+
+                    <CheckBox
+                        android:id="@+id/libuihelper_fragment_stress_test_alarm_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="12dp"
+                        android:text="提醒"
+                        android:textSize="12sp" />
+
+                    <Button
+                        android:id="@+id/libuihelper_fragment_stress_test_start_btn"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_ripple_bg"
+                        android:text="开始测试" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout
+                android:id="@+id/libuihelper_fragment_stress_test_status_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试状态"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="5"
+                            android:text="开始时间：" />
+
+                        <TextView
+                            android:id="@+id/libuihelper_fragment_stress_test_start_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:singleLine="true"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="5"
+                            android:text="已运行：" />
+
+                        <TextView
+                            android:id="@+id/libuihelper_fragment_stress_test_run_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:minEms="5"
+                        android:text="结束时间：" />
+
+                    <TextView
+                        android:id="@+id/libuihelper_fragment_stress_test_stop_time_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/libuihelper_na"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="5"
+                            android:text="测试次数：" />
+
+                        <TextView
+                            android:id="@+id/libuihelper_fragment_stress_test_run_count_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="5"
+                            android:text="失败次数：" />
+
+                        <TextView
+                            android:id="@+id/libuihelper_fragment_stress_test_fail_count_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/libuihelper_fragment_stress_test_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/libuihelper_na"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试日志"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/libuihelper_fragment_stress_test_log_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/libuihelper_fragment_stress_test_brief_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="6dp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</ScrollView>

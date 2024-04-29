@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/libuihelper_closable_tab_title_ll"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/libuihelper_closable_tab_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/libuihelper_na"
+            android:textColor="@color/libuihelper_selectable_dark_gray" />
+
+        <TextView
+            android:id="@+id/libuihelper_closable_tab_desc_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/libuihelper_na"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp"
+            android:visibility="gone"
+            tools:text="Description"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/libuihelper_closable_tab_close_iv"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:contentDescription="@string/libuihelper_close"
+        app:srcCompat="@drawable/ic_close_black_24dp"
+        app:tint="@color/libuihelper_selectable_dark_gray" />
+</LinearLayout>

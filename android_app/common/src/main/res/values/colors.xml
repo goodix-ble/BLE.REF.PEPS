@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="colorGridLine">#dedfe1</color>
+    <color name="colorWindowBack">#EFF3F7</color>
+    <color name="textColorDark">#494949</color>
+    <color name="textColorLight">#9b9b9b</color>
+    <color name="colorNo">#00ffffff</color>
+
+    <!-- blue theme -->
+    <color name="colorPrimaryBlue">#108ee7</color>
+    <color name="colorPrimaryDarkBlue">#0f82d7</color>
+    <color name="colorAccentBlue">#108ee7</color>
+
+    <!-- green theme-->
+    <color name="colorPrimaryGreen">#18baa5</color>
+    <color name="colorPrimaryDarkGreen">#15a896</color>
+    <color name="colorAccentGreen">#18baa5</color>
+
+    <!-- pink theme -->
+    <color name="colorPrimaryPink">#ff9900</color>
+    <color name="colorPrimaryDarkPink">#ec8d00</color>
+    <color name="colorAccentPink">#ff9900</color>
+
+    <!-- pink theme -->
+    <color name="colorPrimaryRed">#b52842</color>
+    <color name="colorPrimaryDarkRed">#9e2338</color>
+    <color name="colorAccentRed">#b52842</color>
+
+    <color name="toastDefaultText">#FFFFFF</color>
+    <color name="toastError">#D32C2C</color>
+    <color name="toastInfo">#5165D5</color>
+    <color name="toastSuccess">#489C49</color>
+    <color name="toastWarning">#E99C05</color>
+    <color name="toastNormal">#252525</color>
+
+</resources>

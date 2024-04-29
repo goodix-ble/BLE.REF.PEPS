@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/libuihelper_dialog_task_indicator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/libuihelper_dialog_task_indicator_container_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp" />
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/libuihelper_dialog_task_indicator_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="invisible"
+        tools:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/libuihelper_dialog_task_indicator_btn_bar_ll"
+        style="?attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/libuihelper_dialog_task_indicator_clear_btn"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/libuihelper_clear" />
+
+        <Button
+            android:id="@+id/libuihelper_dialog_task_indicator_close_btn"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/libuihelper_close" />
+
+        <Button
+            android:id="@+id/libuihelper_dialog_task_indicator_abort_btn"
+            style="?attr/buttonBarButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/libuihelper_abort" />
+    </LinearLayout>
+</LinearLayout>

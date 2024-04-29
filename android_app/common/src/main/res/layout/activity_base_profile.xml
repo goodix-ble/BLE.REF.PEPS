@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowBack">
+
+
+    <com.goodix.ble.gr.toolbox.common.ui.MyScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/include_profile_info" />
+            <FrameLayout
+                android:id="@+id/scroll_content_view_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <Space
+                android:id="@+id/bottom_space"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"/>
+        </LinearLayout>
+    </com.goodix.ble.gr.toolbox.common.ui.MyScrollView>
+
+    <Button
+        android:id="@+id/profile_connect_button"
+        style="@style/ConnectButtonTheme" />
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:background="@color/colorWindowBack"
+	android:padding="1dp">
+
+	<androidx.cardview.widget.CardView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		style="@style/CardViewTheme">
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp" >
+
+
+			<LinearLayout
+				android:id="@+id/layout_device"
+				android:layout_width="40dp"
+				android:layout_height="40dp"
+				android:background="@drawable/circle_shape"
+				android:gravity="center"
+				android:layout_centerVertical="true"
+				>
+				<ImageView
+					android:id="@+id/img_device"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@mipmap/ic_device_other"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="10dp"
+				android:layout_toRightOf="@+id/layout_device"
+				android:orientation="vertical"
+				android:layout_centerVertical="true"
+				android:layout_toLeftOf="@+id/text_rssi"
+				>
+				<TextView
+					android:id="@+id/text_name"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textStyle="bold"
+					android:maxEms="7"
+					android:ellipsize="middle"
+					android:textColor="@color/textColorDark"
+					android:textSize="14sp"
+					android:singleLine="true" />
+
+				<TextView
+					android:id="@+id/text_address"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:textColor="@color/textColorDark"
+					android:textSize="12sp" />
+
+			</LinearLayout>
+
+
+			<TextView
+				android:id="@+id/text_rssi"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:layout_alignParentRight="true"
+				android:layout_centerVertical="true"
+				android:textColor="@color/textColorDark"
+				android:text="-105dBm"
+				android:textSize="15sp" />
+
+		</RelativeLayout>
+
+	</androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,40 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowBack">
+
+    <TextView
+        android:id="@+id/txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" "
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorPrimaryBlue"
+        android:enabled="false"
+        android:focusable="false"
+        android:gravity="center_vertical|top"
+        android:inputType="textMultiLine"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:fadeScrollbars="false"
+        android:scrollbarFadeDuration="2000"
+        android:layout_above="@+id/bondButton"
+        android:layout_below="@+id/txt_title"/>
+
+    <Button
+        android:id="@+id/bondButton"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:text="开始绑定设备"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,58 @@
+<resources>
+    <string name="libuihelper_na" translatable="false">N/A</string>
+    <string name="libuihelper_title_task_dialog">Task Progress</string>
+    <string name="libuihelper_please_select">Please Select</string>
+    <string name="libuihelper_select">Select</string>
+    <string name="libuihelper_start">Start</string>
+    <string name="libuihelper_stop">Stop</string>
+    <string name="libuihelper_running">Running</string>
+    <string name="libuihelper_complete">Complete</string>
+    <string name="libuihelper_done">Done</string>
+    <string name="libuihelper_success">Success</string>
+    <string name="libuihelper_error">Error</string>
+    <string name="libuihelper_cancel">Cancel</string>
+    <string name="libuihelper_clear">Clear</string>
+    <string name="libuihelper_close">Close</string>
+    <string name="libuihelper_abort">Abort</string>
+    <string name="libuihelper_no_selected_file">No Selected File</string>
+    <string name="libuihelper_err_can_not_get_file_name">Can\'t get file name</string>
+    <string name="libuihelper_err_can_not_read_file">Can\'t read file</string>
+    <string name="libuihelper_err_msg">Error: %s</string>
+    <string name="libuihelper_empty_list">List is empty.</string>
+    <string name="libuihelper_action">Action</string>
+    <string name="libuihelper_files">%d file(s)</string>
+    <string name="libuihelper_open">Open</string>
+    <string name="libuihelper_share">Share</string>
+    <string name="libuihelper_delete">Delete</string>
+    <string name="libuihelper_zip">Compress</string>
+    <string name="libuihelper_please_wait">Please wait a moment.</string>
+    <string name="libuihelper_confirm_delete">Are you sure you want to delete?</string>
+    <string name="libuihelper_confirm_close">Are you sure you want to close it？</string>
+    <string name="libuihelper_connect">Connect</string>
+    <string name="libuihelper_connecting">Connecting</string>
+    <string name="libuihelper_connected">Connected</string>
+    <string name="libuihelper_ready">Ready</string>
+    <string name="libuihelper_disconnect">Disconnect</string>
+    <string name="libuihelper_disconnecting">Disconnecting</string>
+    <string name="libuihelper_disconnected">Disconnected</string>
+    <string name="libuihelper_bonded">Bonded</string>
+    <string name="libuihelper_scan">Scan</string>
+    <string name="libuihelper_device_name">Device Name</string>
+    <string name="libuihelper_mac">MAC</string>
+    <string name="libuihelper_service_uuid">Service UUID</string>
+    <string name="libuihelper_rssi" translatable="false">RSSI</string>
+    <string name="libuihelper_show_bonded">Bonded</string>
+    <string name="libuihelper_show_connected">Connected</string>
+    <string name="libuihelper_continuously_scan">Continuously</string>
+    <string name="libuihelper_sort">Sort</string>
+    <string name="libuihelper_failed_to_scan">Failed to scan. Please try again later.\nMessage:\n%s</string>
+    <string name="libuihelper_device_list">Device List</string>
+
+    <string-array name="libuihelper_log_levels">
+        <item>Verbose</item>
+        <item>Debug</item>
+        <item>Info</item>
+        <item>Warning</item>
+        <item>Error</item>
+    </string-array>
+</resources>

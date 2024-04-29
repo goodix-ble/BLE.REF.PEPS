@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWindowBack">
+
+    <TextView
+        android:id="@+id/txt_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="用户ID：232vzx"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/txtAddr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="30sp"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txt_id"/>
+
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true">
+
+        <Button
+            android:id="@+id/sureButton"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:text="进入主界面"/>
+
+        <Button
+            android:id="@+id/ShortOpenButton"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="20sp"
+            android:text="分享信息认证"/>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/emptyImg"
+        android:layout_below="@+id/infoLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_width="300dp"
+        android:layout_height="300dp"/>
+
+
+</RelativeLayout>

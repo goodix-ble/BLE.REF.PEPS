@@ -1,0 +1,49 @@
+<resources>
+
+    <!-- common -->
+    <string name="common_connect">Connect</string>
+    <string name="common_disconnect">Disconnect</string>
+    <string name="common_disconnecting">Disconnecting</string>
+    <string name="common_connecting">Connecting</string>
+    <string name="common_connected">Connect Success</string>
+    <string name="common_ready">Device Ready</string>
+    <string name="common_disconnected">Disconnected</string>
+    <string name="common_sure">OK </string>
+    <string name="common_cancel">Cancel </string>
+    <string name="common_bonding">Binding</string>
+    <string name="common_bonded">Bond Complete</string>
+    <string name="common_not_support">Invalid Device</string>
+    <string name="common_battery">Battery：</string>
+    <string name="common_about">About</string>
+    <string name="common_not_available">N/A</string>
+    <string name="common_device_connect">Device Connect </string>
+    <string name="common_re_connect">Reconnect</string>
+    <string name="common_finding_service">Discovering services </string>
+    <string name="common_no_device">(No device connected)</string>
+    <string name="common_set">Settings</string>
+
+
+    <!-- main_activity -->
+
+
+    <!-- profile fragment -->
+    <string name="profile_no_services_found">No service found, please reselect device to connect</string>
+
+    <!-- profile_scan_dialog_fragment -->
+    <string name="scanner_subtitle_bonded">Bonded Devices</string>
+    <string name="scanner_subtitle_connected">Connected Devices</string>
+    <string name="scanner_subtitle_not_bonded">Available Devices</string>
+    <string name="scanner_select_device">Select Device</string>
+    <string name="scanner_scan_device">Scanning device</string>
+    <string name="scanner_no_device_found">""</string>
+    <string name="common_exit_tip">Click back again to exit.</string>
+    <string name="common_menu">MENU</string>
+
+
+    <!-- app fragment-->
+
+
+    <!-- about string -->
+
+
+</resources>

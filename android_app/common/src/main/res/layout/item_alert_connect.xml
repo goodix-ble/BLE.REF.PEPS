@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorWindowBack"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/common_device_connect"
+        android:textColor="@color/textColorDark"
+        android:textSize="18sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@drawable/add_beacon">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/img_connect_line"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_scan_phone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.goodix.ble.gr.toolbox.common.ui.DottedProgressBar
+                android:id="@+id/connect_progress_bar"
+                android:layout_width="70dp"
+                android:layout_height="20dp"
+                app:activeDot="@drawable/active_dot"
+                app:dotSize="10dp"
+                app:inactiveDot="@drawable/inactive_dot"
+                app:jumpingSpeed="200"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:spacing="2dp" />
+
+            <ImageView
+                android:id="@+id/img_disconnect"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/ic_connect_failed"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:visibility="visible" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="60dp"
+                android:src="@mipmap/ic_bluetooth_device"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/find_service_line"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/img_service0"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@mipmap/ic_service"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/img_service1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/ic_service"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:src="@mipmap/ic_search"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/connect_status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textColor="?attr/colorAccent"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/img_connect_line" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/button_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end">
+
+        <Button
+            android:id="@+id/cancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/common_cancel"
+            android:textColor="?attr/colorAccent" />
+
+        <Button
+            android:id="@+id/re_connect"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:text="@string/common_re_connect"
+            android:textColor="?attr/colorAccent" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试配置"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/libuihelper_fragment_test_runner_config_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    tools:background="@android:color/darker_gray"
+                    tools:minHeight="60dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:gravity="end">
+
+                    <CheckBox
+                        android:id="@+id/libuihelper_fragment_test_runner_save_log_cb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="保存失败日志"
+                        android:textSize="12sp" />
+
+                    <Space
+                        android:layout_width="12dp"
+                        android:layout_height="0dp" />
+
+                    <Button
+                        android:id="@+id/libuihelper_fragment_test_runner_start_btn"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/button_ripple_bg"
+                        android:text="开始测试" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout
+                android:id="@+id/libuihelper_fragment_test_runner_status_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试状态"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="4"
+                            android:text="已运行：" />
+
+                        <TextView
+                            android:id="@+id/libuihelper_fragment_test_runner_run_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="5"
+                            android:text="开始时间：" />
+
+                        <TextView
+                            android:id="@+id/libuihelper_fragment_test_runner_start_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="start"
+                            android:singleLine="true"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="4"
+                            android:text="进度：" />
+
+                        <TextView
+                            android:id="@+id/libuihelper_fragment_test_runner_progress_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="2"
+                        android:baselineAligned="false"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:minEms="5"
+                            android:text="结束时间：" />
+
+                        <TextView
+                            android:id="@+id/libuihelper_fragment_test_runner_stop_time_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/libuihelper_na"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/libuihelper_fragment_test_runner_status_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:text="@string/libuihelper_na"
+                    android:textColor="@android:color/black"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="测试日志"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/libuihelper_fragment_test_runner_log_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>
