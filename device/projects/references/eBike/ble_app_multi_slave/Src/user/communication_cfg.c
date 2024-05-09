@@ -21,8 +21,8 @@ static void gus_data_send(uint8_t *p_data, uint16_t length)
 
 static void cm_event_handler(bool status, receive_frame_t *p_frame)
 {
-    uint8_t reset_flag = 0;
-    uint8_t send_data[28];
+    //uint8_t reset_flag = 0;
+    //uint8_t send_data[28];
     switch(p_frame->cmd_type)
     {
         case 0x0001://进行连接认证

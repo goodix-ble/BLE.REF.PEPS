@@ -100,7 +100,8 @@ static void slave_adv_start(void)
         .addr_type = BLE_GAP_ADDR_TYPE_RANDOM_STATIC,
     };
     memcpy(adv_addr.gap_addr.addr, addr, 6);
-    
+    adv_addr.gap_addr.addr[5] |= 0xC0;
+
     error_code = ble_gap_addr_set(&adv_addr);
     APP_ERROR_CHECK(error_code);
 

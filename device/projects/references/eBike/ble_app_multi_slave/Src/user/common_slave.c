@@ -117,7 +117,8 @@ static void slave_adv_start(void)
         .addr_type = BLE_GAP_ADDR_TYPE_RANDOM_STATIC,
     };
     memcpy(adv_addr.gap_addr.addr, addr, 6);
-    
+    adv_addr.gap_addr.addr[5] |= 0xC0;
+
     error_code = ble_gap_addr_set(&adv_addr);
     APP_ERROR_CHECK(error_code);
 
@@ -190,9 +191,10 @@ static const uint8_t s_auth_info[128] =
     161,194,9,181,236,97,11,217,108,147,28,64
 };
 
-static const uint8_t LONG_USER_AUTH[] = {119,30,117,187,149,182,105,189,103,144,72,210,92,55,229,143,};
-
 static const uint8_t SHORT_USERAUTH[] = {49,119,115,173,215,177,8,112,101,219,170,222,105,195,41,4};
+
+#if 0
+static const uint8_t LONG_USER_AUTH[] = {119,30,117,187,149,182,105,189,103,144,72,210,92,55,229,143,};
 
 static const uint8_t s_long_auth[] = 
 {
@@ -203,7 +205,7 @@ static const uint8_t s_short_auth[] =
 {
     49,119,115,173,215,177,8,112,101,219,170,222,105,195,41,4
 };
-
+#endif
 
 static void slave_service_process_event(gus_evt_t *p_evt)
 {

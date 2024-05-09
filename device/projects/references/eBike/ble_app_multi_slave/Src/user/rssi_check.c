@@ -1,6 +1,7 @@
 #include "rssi_check.h"
 #include "user_gui.h"
 #include <string.h>
+#include "stdio.h"
 
 #define RSSI_SAVE_COUNT   20
 
