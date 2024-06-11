@@ -146,7 +146,9 @@
 
 #### 4.2.4 视频演示
 
-上述操作过程, 已录制视频进行演示, 可跳转观看. (TODO)
+上述操作过程, 已录制视频进行演示, 可跳转观看.
+
+- [汇顶BLE芯片典型应用场景：两轮车的靠近解锁方案 | PEPS | Goodix BLE | GR551x | GR552x | GR533x_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1Wb421H7kg/?vd_source=849be8d36cdf256cbd8e61ecdc3316ea)
 
 
 
